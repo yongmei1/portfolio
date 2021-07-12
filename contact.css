@@ -230,3 +230,16 @@ h3
         width: 100%;
     }
 }
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+span + span {
+    margin-left: 30px;
+}
