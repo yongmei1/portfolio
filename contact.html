@@ -1,0 +1,107 @@
+<!--how to contact you-->
+
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yong Mei Chen Portfolio</title> 
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <script src="https://kit.fontawesome.com/541626bb76.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img src="logo3.png" id="logo" width="72" height="66">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </header>
+        
+            <section class="contact">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    
+                    <div class="container"> 
+                            <div class="contactInfo">
+                                <div class="box">
+                                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <div class="text">
+                                        <h3>Address</h3>
+                                        <p>21 Oakfield Close, <br>Glanmire, <br>Cork</p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                    <div class="text">
+                                        <h3>Email</h3>
+                                        <p>yongmei.chen@mycit.ie</p>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                        <div class="text">
+                                            <h3>Phone</h3>
+                                            <p>083-458-2683</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contactForm">
+                                <form action="https://formsubmit.co/yongmei.chen@mycit.ie" method="POST">
+                                        <h1>Send Message</h1>
+
+                                        <div class="inputBox">
+                                            <input type="text" name="name" required="required">
+                                            <span>Full Name</span>
+                                        </div>
+
+                                        <div class="inputBox">
+                                            <input type="text" name="email" required="required">
+                                            <span>Email</span>
+                                        </div>
+
+                                        <div class="inputBox">
+                                            <textarea name="message" required="required"></textarea>
+                                            <span>Your Message</span>
+                                        </div>
+
+                                        <div class="inputBox">
+                                            <input type="submit" name="" value="Send">
+                                        </div>
+                                </form>
+                        </div>
+                    </div>            
+                </div>
+            </section> 
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let mountains_front = document.getElementById('mountains_front');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
