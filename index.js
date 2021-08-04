@@ -1,0 +1,17 @@
+image_array = [
+    '1.jpg',
+    '2.jpg',
+    '3.jpg',
+    '4.jpg',
+]
+
+function get_random_image(){
+    //get a random index
+    random_index = Math.floor(Math.random() = image_array_length);
+
+    //get an image at the random_index
+    selected_image = image_array[random_index]
+
+    //display the image
+    document.getElementById('image_shower').src = `./images/${selected_image}`
+}
