@@ -4,6 +4,7 @@
     <html>
         <head>
             <meta charset="utf-8"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Yong Mei Chen - Portfolio</title> 
             <link rel="stylesheet" type="text/css" href="contact.css">
         </head>
@@ -13,44 +14,40 @@
     
                 <ul>
                     <li><a href="index.html" >Home</a></li>
-                    <li><a href="about.html">About</a></li>
                     <li><a href="work.html" class="active">Work</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </header>
-            
-            <section>
-                <img src="stars.png" id="stars">
-                <img src="moon.png" id="moon">
-                <h2 id="text">Yong Mei Chen</h2>
-                <a href="#sec" id="btn">Explore</a>
-                r
-            </section>
-            <div class="sec" id="sec">
+                
+            <section class="contact">
+                <div class="content">
 
-                <h2 id="texta">Chara : Android app</h2>
-                <p>During my internship at McKesson, I worked on an intern project with another intern. We prototyped and programmed an android app together over the course of our internship. We both completed a few courses before creating this app to learn new tools. Tools like Miro, Invision, Gimp and Inkscape for the UX design process of the app. We completed beginner courses in kotlin and android development to help. 
-                You can read more about it in my README file on my GitHub repository. You can view it <a href="https://github.com/yongmei1/chara">here.</a><br><br>
-                I have a chatbot built on a flask server working with the app.  You can view it <a href="https://github.com/yongmei1/pythonChatbot">here</a>
-                </p>
+           <br><br><br>
+           <h2 id="texta">Chara : Android app</h2>
+           <p>During my internship at McKesson, I worked on an intern project with another intern. We prototyped and programmed an android app together over the course of our internship. We both completed a few courses before creating this app to learn new tools. Tools like Miro, Invision, Gimp and Inkscape for the UX design process of the app. We completed beginner courses in kotlin and android development to help. 
+            You can read more about it in my README file on my GitHub repository. You can view it <a href="https://github.com/yongmei1/chara">here.</a><br><br>
+            I have a chatbot built on a flask server working with the app.  You can view it <a href="https://github.com/yongmei1/pythonChatbot">here</a>
+            </p>
 
+            <br><br><br>
             <h2 id="texta">Dockerising a Hello World React App</h2>
             <p>This small project got me to learn about the basics of Docker and React. You can view it on my GitHub. <!--<a href="https://github.com/yongmei1/chara">here.</a>-->
             You can view it <a href="https://github.com/yongmei1/pythonChatbot">here</a>
             </p>
 
+            <br><br><br>
             <h2 id="texta">This portfolio website</h2>
-            <p>I spent some time playing around with various website builders to just learn about them and see how much they have advanced in this day.
-            Originally I was leaning towards building one using one of the various website builders but after spending some time making one on their I found that it didnt really suit me.
+            <p>I spent some time playing around with various website builders to see the types of templates they had.
+            Originally I was leaning towards building one using one of the various website builders but after spending some time with a template I liked, I found none that I absolutely loved!
             Hence I decided to make one from scratch. This way I could have more say in how I wanted to design the website! 
             </p>
-            </div>
     
+            </div>
+            </section>
+
+
             <script>
                 let stars = document.getElementById('stars');
-                let moon = document.getElementById('moon');
-                let mountains_behind = document.getElementById('mountains_behind');
-                let mountains_front = document.getElementById('mountains_front');
                 let text = document.getElementById('text');
                 let btn = document.getElementById('btn');
                 let header = document.querySelector('header');
@@ -58,8 +55,6 @@
                 window.addEventListener('scroll', function(){
                     let value = window.scrollY;
                     stars.style.left = value * 0.25 + 'px';
-                    moon.style.top = value * 1.05 + 'px';
-                    mountains_behind.style.top = value * 0.5 + 'px';
                     text.style.marginRight = value * 4 + 'px';
                     text.style.marginTop = value * 1.5 + 'px';
                     btn.style.marginTop = value * 1.5 + 'px';
